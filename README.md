@@ -37,8 +37,6 @@ Each problem has its own directory named `problem_XXX`, where XXX is the problem
 - [x] [Problem 011: Largest Product in a Grid](#problem-011-largest-product-in-a-grid)
 - [ ] [Problem 012: Highly Divisible Triangular Number](#problem-012-highly-divisible-triangular-number)
 
-...  
-
 ## Lessons Learned  
 
 ### [Problem 001: Multiples of 3 or 5](problem_001)
@@ -157,20 +155,32 @@ Each problem has its own directory named `problem_XXX`, where XXX is the problem
   5. Using `np.float64` data type to handle large sums accurately.
 
 ### [Problem 011: Largest Product in a Grid](problem_011)
+- **Key lesson or insight gained:**  
+  This problem demonstrates the importance of efficient grid traversal and handling edge cases in 2D array operations. It showcases how a seemingly complex problem can be solved with a systematic approach, checking all possible directions in a single pass through the grid.
+- **New concept or algorithm learned:**  
+  The solution implements a sliding window technique adapted for a 2D grid:
+  1. It uses nested loops to iterate through each cell in the grid.
+  2. For each cell, it calculates products in four directions: right, down, diagonal right, and diagonal left.
+  3. It handles edge cases by setting products to 0 when calculations would go out of bounds.
+- **Interesting optimization techniques used:**
+  1. Using numpy for efficient array operations and memory management.
+  2. Reading the grid from a file, allowing for easy modification of the input without changing the code.
+  3. Calculating all four directional products in a single pass through the grid, reducing time complexity.
+  4. Using conditional assignments to update the maximum product, avoiding repetitive if-else statements.
+  5. Leveraging Python's ternary operator for concise max value updates (e.g., `maxProd = right if right > maxProd else maxProd`).
 
 ### [Problem 012: Highly Divisible Triangular Number](problem_012)
-
-
-
-
-
-...  
+- **Key lesson or insight gained:** In progress...
+- **New concept or algorithm learned:** In progress...
+- **Interesting optimization techniques used:** In progress...
+  
 <!--  
 ### [Problem xxx: NAME]
 - [Key lesson or insight gained]  
 - [New concept or algorithm learned]  
 - [Any interesting optimization techniques used]
 -->
+
 ---
 
 ## Thank You <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Folded%20Hands.png" alt="Folded Hands" width="20" height="20" />
