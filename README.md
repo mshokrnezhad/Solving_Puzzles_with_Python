@@ -128,6 +128,18 @@ Each problem has its own directory named `problem_XXX`, where XXX is the problem
   4. Using an in-place comparison to update the maximum product, avoiding the need for additional data structures to store intermediate results.
 
 ### [Problem 009: Special Pythagorean Triplet](problem_009)
+- **Key lesson or insight gained:**  
+  This problem underscores the importance of understanding mathematical relationships and constraints to optimize search spaces. It demonstrates how leveraging problem-specific knowledge (in this case, properties of Pythagorean triplets and the sum constraint) can significantly reduce the computational complexity of finding a solution.
+- **New concept or algorithm learned:**  
+  The solution employs a targeted search approach for Pythagorean triplets. Instead of blindly checking all possible combinations, it uses the constraints of the problem to narrow down the search range:
+  1. Recognizing that $a < b < c$ and $a + b + c = 1000$.
+  2. Deducing that a cannot exceed 332 (`ceil(1000/3) - 1`).
+  3. Calculating an upper bound for b based on the remaining sum after choosing a.
+- **Interesting optimization techniques used:**
+  1. Setting an upper bound for `a` at 332, which significantly reduces the outer loop iterations.
+  2. Dynamically calculating the upper bound for `b` in each iteration of the outer loop, further optimizing the search space.
+  3. Using integer division and modulo operations to handle both even and odd cases for the b_bound calculation.
+  4. Implicitly calculating `c` from the sum constraint rather than using a third loop, reducing the overall complexity.
 
 ### [Problem 010: Summation of Primes](problem_010)
 
