@@ -71,6 +71,15 @@ Each problem has its own directory named `problem_XXX`, where XXX is the problem
   3. The use of math.sqrt(i) as an upper bound for checking divisibility in the second approach significantly reduces the number of iterations needed.
 
 ### [Problem 004: Largest Palindrome Product](problem_004)
+- **Key lesson or insight gained:**  
+  This problem emphasizes the importance of considering both mathematical properties (palindromes) and algorithmic efficiency. It demonstrates how combining string manipulation with numerical calculations can lead to effective solutions for number theory problems.
+- **New concept or algorithm learned:**  
+  The solution introduces a reverse iteration approach, starting from the largest possible palindrome and working downwards. This method, combined with efficient factor checking, allows for quicker identification of the largest palindrome that meets the criteria.
+- **Interesting optimization techniques used:**
+  1. Using string manipulation to check for palindromes, which is more efficient than mathematical methods for this specific task.
+  2. Starting from the upper bound and working downwards, which allows for early termination once a valid palindrome is found.
+  3. Utilizing `math.ceil(math.sqrt(bound))` as a starting point for factor checking, which significantly reduces the search space.
+  4. Employing a range check (`start < 1000 and start > 100`) to ensure factors are 3-digit numbers, efficiently filtering out invalid possibilities.
 
 ### [Problem 005: Smallest Multiple](problem_005)
 
