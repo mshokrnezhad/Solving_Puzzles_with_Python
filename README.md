@@ -82,6 +82,15 @@ Each problem has its own directory named `problem_XXX`, where XXX is the problem
   4. Employing a range check (`start < 1000 and start > 100`) to ensure factors are 3-digit numbers, efficiently filtering out invalid possibilities.
 
 ### [Problem 005: Smallest Multiple](problem_005)
+- **Key lesson or insight gained:**  
+  This problem highlights the importance of understanding prime factorization and its role in finding the least common multiple (LCM) of a range of numbers. It demonstrates how breaking down numbers into their prime factors can lead to efficient solutions for seemingly complex numerical problems.
+- **New concept or algorithm learned:**  
+  The solution introduces a recursive approach to prime factorization, combined with a method to track the maximum count of each prime factor needed. This technique effectively calculates the LCM without directly computing multiples, which would be inefficient for larger ranges.
+- **Interesting optimization techniques used:**
+  1. Using a pre-defined list of prime numbers (`primal_nums`) to quickly identify prime factors, reducing unnecessary calculations.
+  2. Employing a recursive function (`find_factors`) to efficiently break down composite numbers into their prime factors.
+  3. Utilizing a numpy array to keep track of the maximum count of each prime factor across all numbers in the range, ensuring the smallest number that's divisible by all.
+  4. Only updating the count when a higher power of a prime factor is encountered, optimizing space and avoiding redundant calculations.
 
 ### [Problem 006: Sum Square Difference](problem_006)
 
