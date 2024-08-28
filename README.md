@@ -5,9 +5,9 @@ This repository contains my solutions to problems from [Project Euler](https://p
 ## About This Project  
 
 The purpose of this project is to:  
-1. Improve my problem-solving skills  
-2. Enhance my understanding of mathematics and algorithms  
-3. Practice coding in [your preferred programming language]  
+1. Improve my problem-solving skills.
+2. Enhance my understanding of mathematics and algorithms.
+3. Practice coding in Python.  
 
 ## Structure  
 
