@@ -25,18 +25,38 @@ Each problem has its own directory named `problem_XXX`, where XXX is the problem
 ## Progress  
 
 - [x] [Problem 001: Multiples of 3 or 5](#problem-001-multiples-of-3-or-5)
+- [x] [Problem 002: Multiples of 3 or 5](#problem-001-multiples-of-3-or-5)
+- [x] [Problem 003: Multiples of 3 or 5](#problem-001-multiples-of-3-or-5)
+- [x] [Problem 004: Multiples of 3 or 5](#problem-001-multiples-of-3-or-5)
+- [x] [Problem 005: Multiples of 3 or 5](#problem-001-multiples-of-3-or-5)
+- [x] [Problem 006: Multiples of 3 or 5](#problem-001-multiples-of-3-or-5)
+- [x] [Problem 007: Multiples of 3 or 5](#problem-001-multiples-of-3-or-5)
+- [x] [Problem 008: Multiples of 3 or 5](#problem-001-multiples-of-3-or-5)
+- [x] [Problem 009: Multiples of 3 or 5](#problem-001-multiples-of-3-or-5)
+- [x] [Problem 010: Multiples of 3 or 5](#problem-001-multiples-of-3-or-5)
+- [x] [Problem 011: Multiples of 3 or 5](#problem-001-multiples-of-3-or-5)
+- [ ] [Problem 012: Multiples of 3 or 5](#problem-001-multiples-of-3-or-5)
 
 ...  
 
 ## Lessons Learned  
 
 ### [Problem 001: Multiples of 3 or 5](problem_001)
-- [Key lesson or insight gained]  
-- [New concept or algorithm learned]  
-- [Any interesting optimization techniques used]  
+- **Key lesson or insight gained:**   
+  The problem introduces the concept of finding multiples and summing them. It's a good exercise in using modulo operations and conditional statements.  
+- **New concept or algorithm learned:**  
+  While this problem doesn't require advanced algorithms, it reinforces the use of the modulo operator (`%`) to check for divisibility. It's a simple yet effective way to identify multiples.  
+- **Interesting optimization techniques:**  
+  1. We could optimize this solution by using the formula for the sum of an arithmetic sequence, reducing the time complexity from `O(n)` to `O(1)`.  
+  2. We could use a set to avoid double-counting numbers that are multiples of both 3 and 5 (like 15).  
 
 ...  
-
+<!--  
+### [Problem xxx: NAME]
+- [Key lesson or insight gained]  
+- [New concept or algorithm learned]  
+- [Any interesting optimization techniques used]
+-->
 ---
 
 ## Thank You <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Folded%20Hands.png" alt="Folded Hands" width="20" height="20" />
