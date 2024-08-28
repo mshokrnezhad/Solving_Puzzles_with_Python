@@ -67,8 +67,8 @@ Each problem has its own directory named `problem_XXX`, where XXX is the problem
   The solution introduces a simple but effective method for prime factorization. It iteratively divides the target number by potential factors, reducing the problem size with each successful division. This approach is particularly useful for finding the largest prime factor without needing to calculate all prime factors.
 - **Interesting optimization techniques used:**
   1. The algorithm stops when the remaining target becomes smaller than the current divisor, as this implies that the last successful divisor was the largest prime factor.
-  2. The second approach (in find_prime_numbers.py) uses a sieve-like method to generate prime numbers up to a certain limit, which can be more efficient for finding multiple prime factors.
-  3. The use of math.sqrt(i) as an upper bound for checking divisibility in the second approach significantly reduces the number of iterations needed.
+  2. The second approach (in [find_prime_numbers.py](problem_003/find_prime_numbers.py) uses a sieve-like method to generate prime numbers up to a certain limit, which can be more efficient for finding multiple prime factors.
+  3. The use of `math.sqrt(i)` as an upper bound for checking divisibility in the second approach significantly reduces the number of iterations needed.
 
 ### [Problem 004: Largest Palindrome Product](problem_004)
 - **Key lesson or insight gained:**  
