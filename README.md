@@ -107,6 +107,14 @@ Each problem has its own directory named `problem_XXX`, where XXX is the problem
   3. Avoiding the need for large data structures or memory-intensive operations by directly computing the final result.
 
 ### [Problem 007: 10001st Prime](problem_007)
+- **Key lesson or insight gained:**  
+  This problem emphasizes the importance of efficient prime number generation and testing. It demonstrates that while finding prime numbers is a straightforward concept, implementing an efficient algorithm for large-scale prime number identification requires careful consideration of performance optimizations.
+- **New concept or algorithm learned:**  
+  The solution implements a simple but effective method for generating prime numbers sequentially. It uses the principle that a number is prime if it's not divisible by any prime number smaller than itself. This approach, known as trial division, is one of the fundamental methods for prime number testing.
+- **Interesting optimization techniques used:**
+  1. Maintaining a list of known prime numbers and only checking divisibility against these, rather than all numbers up to the candidate.
+  2. Starting the search from 3 and incrementing by 2 each time, effectively skipping all even numbers after 2, which are known to be non-prime.
+  3. Using an early exit strategy in the primality test function (`IsPrime`), which stops checking as soon as a divisor is found.
 
 ### [Problem 008: Largest Product in a Series](problem_008)
 
