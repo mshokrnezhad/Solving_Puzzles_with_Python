@@ -24,7 +24,7 @@ Each problem has its own directory named `problem_XXX`, where XXX is the problem
 
 ## Progress  
 
-- [✓] [Problem 001: Multiples of 3 or 5](problem-001-multiples-of-3-or-5)
+- [x] [Problem 001: Multiples of 3 or 5](#problem-001-multiples-of-3-or-5)
 
 ...  
 
