@@ -142,6 +142,19 @@ Each problem has its own directory named `problem_XXX`, where XXX is the problem
   4. Implicitly calculating `c` from the sum constraint rather than using a third loop, reducing the overall complexity.
 
 ### [Problem 010: Summation of Primes](problem_010)
+- **Key lesson or insight gained:**  
+  This problem highlights the importance of efficient prime number generation and summation for large ranges. It demonstrates that while brute-force approaches can work for smaller numbers, optimizing the algorithm becomes crucial when dealing with larger bounds. The solution also showcases the trade-offs between different implementation strategies and their impact on performance.
+- **New concept or algorithm learned:**  
+  The solution implements a modified Sieve of Eratosthenes approach:
+  1. It maintains a growing list of prime numbers.
+  2. For each new number, it checks divisibility only by primes up to its square root.
+  3. It uses numpy arrays for efficient storage and operations on large sets of numbers.
+- **Interesting optimization techniques used:**
+  1. Using numpy arrays for fast numerical operations and efficient memory usage.
+  2. Filtering the list of primes to check against by considering only primes up to the square root of the current number.
+  3. Breaking the divisibility check early if any remainder is zero, avoiding unnecessary computations.
+  4. Experimenting with different methods for checking primality, including vectorized operations (commented out) and a flag-based approach.
+  5. Using `np.float64` data type to handle large sums accurately.
 
 ### [Problem 011: Largest Product in a Grid](problem_011)
 
