@@ -93,6 +93,18 @@ Each problem has its own directory named `problem_XXX`, where XXX is the problem
   4. Only updating the count when a higher power of a prime factor is encountered, optimizing space and avoiding redundant calculations.
 
 ### [Problem 006: Sum Square Difference](problem_006)
+- **Key lesson or insight gained:**  
+  This problem underscores the power of mathematical formulas in solving seemingly complex numerical problems. It demonstrates how understanding and applying mathematical series and summation formulas can lead to elegant and efficient solutions, avoiding brute-force calculations.
+- **New concept or algorithm learned:**  
+  The solution utilizes two key mathematical formulas:
+  1. The sum of squares formula: $\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}$
+  2. The square of sum formula: $(\sum_{i=1}^n i)^2 = (\frac{n(n+1)}{2})^2$
+    
+  These formulas provide a direct way to calculate the required values without iterating through each number individually.
+- **Interesting optimization techniques used:**
+  1. Using closed-form mathematical expressions instead of loops, which drastically reduces computational complexity from `O(n)` to `O(1)`.
+  2. Implementing the solution with just a few lines of code, demonstrating how mathematical insight can lead to concise and efficient programming.
+  3. Avoiding the need for large data structures or memory-intensive operations by directly computing the final result.
 
 ### [Problem 007: 10001st Prime](problem_007)
 
