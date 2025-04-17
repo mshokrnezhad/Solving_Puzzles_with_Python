@@ -4,7 +4,7 @@
   <img src="project_euler.png" alt="drawing" width="600"/>
 </div>
 
-This repository contains my solutions to various programming puzzles, including those from [Project Euler](https://projecteuler.net/) and other sources. These puzzles are designed to challenge your mathematical and programming skills, requiring creative problem-solving approaches to solve efficiently.
+This repository contains my solutions to various programming puzzles. These puzzles are designed to challenge your mathematical and programming skills, requiring creative problem-solving approaches to solve efficiently.
 
 ## About This Project
 
@@ -17,7 +17,7 @@ The purpose of this project is to:
 
 ## Structure
 
-Each puzzle has its own directory named based on its source and number (e.g., `puzzle_XXX` for Project Euler puzzles). Inside each directory, you'll find:
+Each puzzle has its own directory named based on its source and number (e.g., `puzzle_XXX`). Inside each directory, you'll find:
 
 - The puzzle definition
 - The solution code
@@ -43,6 +43,7 @@ Each puzzle has its own directory named based on its source and number (e.g., `p
 
 ### [Puzzle 001: Multiples of 3 or 5](puzzle_001)
 
+- **Source:** [LINKS](https://projecteuler.net/problem=1)
 - **Puzzle Definition:**  
   If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
 - **Key lesson or insight gained:**  
