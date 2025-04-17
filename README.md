@@ -234,13 +234,13 @@ Each puzzle has its own directory named based on its source and number (e.g., `p
 
   The interval-based approach collects all intervals first, then decides which type to flip, while the one-pass approach makes decisions on-the-fly.
 
-  Since the groups of forward and backward caps must alternate in the sequence, the number of groups for each type will either be equal or differ by one. So, if we observe the first cap in the queue and decide to flip all groups of the opposite type, we ensure that all caps become uniform with the fewest possible commands.
+  Since the groups of forward and backward caps must alternate in the sequence, the number of groups for each type will either be equal or differ by one. So, if we observe the first cap in the queue and decide to flip all groups of the opposite type, we ensure that all caps become uniform with the fewest possible commands (what we do in the one-pass method).
 
 - **Interesting optimization techniques used:**
   1. Using intervals to group consecutive items of the same type, reducing the number of operations.
-  2. Determining whether to flip 'F' or 'B' based on which would require fewer flips.
+  2. Appending a sentinel value ('END' or first element) to handle the last interval without special case code.
   3. The one-pass algorithm that avoids storing all intervals, making it more memory-efficient.
-  4. Appending a sentinel value ('END' or first element) to handle the last interval without special case code.
+  4. Leveraging the alternating nature of cap groups to minimize commands - since forward and backward groups must alternate, flipping all groups of one type ensures uniformity with minimal operations.
 
 ---
 
