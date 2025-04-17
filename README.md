@@ -38,6 +38,7 @@ Each puzzle has its own directory named based on its source and number (e.g., `p
 - [x] [Puzzle 010: Summation of Primes](#puzzle-010-summation-of-primes)
 - [x] [Puzzle 011: Largest Product in a Grid](#puzzle-011-largest-product-in-a-grid)
 - [ ] [Puzzle 012: Highly Divisible Triangular Number](#puzzle-012-highly-divisible-triangular-number)
+- [x] [Puzzle 013: You Will All Conform](#puzzle-013-you-will-all-conform)
 
 ## Lessons Learned
 
@@ -221,12 +222,25 @@ Each puzzle has its own directory named based on its source and number (e.g., `p
 - **New concept or algorithm learned:** In progress...
 - **Interesting optimization techniques used:** In progress...
 
-<!--
-### [Puzzle xxx: NAME]
-- [Key lesson or insight gained]
-- [New concept or algorithm learned]
-- [Any interesting optimization techniques used]
--->
+### [Puzzle 013: You Will All Conform](puzzle_013)
+
+- **Source:** [Puzzle 1 of Programming for the Puzzled](https://ocw.mit.edu/courses/6-s095-programming-for-the-puzzled-january-iap-2018/pages/puzzle-1-you-will-all-conform/)
+- **Puzzle Definition:**  
+  You Will All Conform involves a vector of F's and B's, representing forwards and backwards caps. The goal is to find the fewest commands needed to get either all F's or all B's, by flipping caps in specified intervals.
+- **Key lesson or insight gained:**  
+  This puzzle demonstrates the importance of identifying intervals of similar items in a sequence and making optimal decisions about which intervals to modify. It shows how proper grouping can lead to efficient solutions for sequence transformation problems.
+- **New concept or algorithm learned:**  
+  The solution introduces two approaches: a two-pass interval-based method and a one-pass method. Both approaches identify consecutive sections of similar items but handle them differently.
+
+  The interval-based approach collects all intervals first, then decides which type to flip, while the one-pass approach makes decisions on-the-fly.
+
+  Since the groups of forward and backward caps must alternate in the sequence, the number of groups for each type will either be equal or differ by one. So, if we observe the first cap in the queue and decide to flip all groups of the opposite type, we ensure that all caps become uniform with the fewest possible commands.
+
+- **Interesting optimization techniques used:**
+  1. Using intervals to group consecutive items of the same type, reducing the number of operations.
+  2. Determining whether to flip 'F' or 'B' based on which would require fewer flips.
+  3. The one-pass algorithm that avoids storing all intervals, making it more memory-efficient.
+  4. Appending a sentinel value ('END' or first element) to handle the last interval without special case code.
 
 ---
 
