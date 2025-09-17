@@ -39,6 +39,7 @@ Each puzzle has its own directory named based on its source and number (e.g., `p
 - [x] [Puzzle 011: Largest Product in a Grid](#puzzle-011-largest-product-in-a-grid)
 - [ ] [Puzzle 012: Highly Divisible Triangular Number](#puzzle-012-highly-divisible-triangular-number)
 - [x] [Puzzle 013: You Will All Conform](#puzzle-013-you-will-all-conform)
+ - [x] [Puzzle 014: Merge Sorted Array](#puzzle-014-merge-sorted-array)
 
 ## Lessons Learned
 
@@ -241,6 +242,20 @@ Each puzzle has its own directory named based on its source and number (e.g., `p
   2. Appending a sentinel value ('END' or first element) to handle the last interval without special case code.
   3. The one-pass algorithm that avoids storing all intervals, making it more memory-efficient.
   4. Leveraging the alternating nature of cap groups to minimize commands - since forward and backward groups must alternate, flipping all groups of one type ensures uniformity with minimal operations.
+
+### [Puzzle 014: Merge Sorted Array](puzzle_014)
+
+- **Source:** [LeetCode 88 — Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+- **Puzzle Definition:**  
+  You are given two integer arrays `nums1` and `nums2`, each sorted in non-decreasing order, and two integers `m` and `n` representing the number of valid elements in `nums1` and `nums2` respectively. Merge `nums1` and `nums2` into a single array sorted in non-decreasing order.
+- **Key lesson or insight gained:**  
+  Two-pointer techniques enable linear-time merges when inputs are already sorted, avoiding unnecessary re-sorting.
+- **New concept or algorithm learned:**  
+  Classic merge step from merge sort using two indices that traverse the arrays and append the smaller current element.
+- **Interesting optimization techniques used:**
+  1. Early exits when one array is exhausted, appending the remainder of the other array in O(1) with slicing/extend.
+  2. Pointer movement in a single while loop to maintain O(m + n) time and O(1) extra work beyond the output container.
+  3. Handling edge cases upfront (empty `nums1` or `nums2`) to simplify the main loop.
 
 ---
 
