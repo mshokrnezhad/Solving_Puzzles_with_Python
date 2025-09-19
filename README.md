@@ -39,7 +39,8 @@ Each puzzle has its own directory named based on its source and number (e.g., `p
 - [x] [Puzzle 011: Largest Product in a Grid](#puzzle-011-largest-product-in-a-grid)
 - [ ] [Puzzle 012: Highly Divisible Triangular Number](#puzzle-012-highly-divisible-triangular-number)
 - [x] [Puzzle 013: You Will All Conform](#puzzle-013-you-will-all-conform)
- - [x] [Puzzle 014: Merge Sorted Array](#puzzle-014-merge-sorted-array)
+- [x] [Puzzle 014: Merge Sorted Array](#puzzle-014-merge-sorted-array)
+- [x] [Puzzle 015: Remove Element](#puzzle-015-remove-element)
 
 ## Lessons Learned
 
@@ -256,6 +257,21 @@ Each puzzle has its own directory named based on its source and number (e.g., `p
   1. Early exits when one array is exhausted, appending the remainder of the other array in O(1) with slicing/extend.
   2. Pointer movement in a single while loop to maintain O(m + n) time and O(1) extra work beyond the output container.
   3. Handling edge cases upfront (empty `nums1` or `nums2`) to simplify the main loop.
+
+### [Puzzle 015: Remove Element](puzzle_015)
+
+- **Source:** [LeetCode 27 — Remove Element](https://leetcode.com/problems/remove-element/)
+- **Puzzle Definition:**  
+  Given an integer array `nums` and an integer `val`, remove all occurrences of `val` in `nums` in-place. The order of the elements may be changed. Then return the number of elements in `nums` which are not equal to `val`. The first `k` elements of `nums` should contain the elements which are not equal to `val`.
+- **Key lesson or insight gained:**  
+  In-place array modification can be achieved efficiently using two-pointer techniques, where one pointer tracks the "valid" portion of the array and another processes elements sequentially.
+- **New concept or algorithm learned:**  
+  The solution implements a two-pointer approach where one pointer (`i`) scans the array from left to right, while another pointer (`k`) marks the boundary of the "valid" elements from the right. When a target value is found, it's swapped to the end of the array and the boundary is moved left.
+- **Interesting optimization techniques used:**
+  1. Using a single pass with two pointers to achieve O(n) time complexity while maintaining O(1) extra space.
+  2. Swapping target elements to the end of the array rather than shifting all subsequent elements, which would be O(n) per removal.
+  3. Only incrementing the left pointer when no swap occurs, ensuring that swapped-in elements are properly checked.
+  4. Using the right pointer as both a boundary marker and a swap destination, eliminating the need for additional data structures.
 
 ---
 
